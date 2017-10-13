@@ -34,6 +34,8 @@ RUN /usr/bin/fix-permissions /var/lib/gogs && \
     /usr/bin/fix-permissions /home/gogs && \
     /usr/bin/fix-permissions /opt/gogs
 
+RUN yum install origin-clients -y
+
 EXPOSE 3000
 USER 997
 
